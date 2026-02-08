@@ -1,0 +1,54 @@
+/* Esconder elementos desnecessários do chat da Twitch */
+/* Esconder o header do chat */
+.stream-chat-header,
+.chat-room__header,
+[class*="chat-room__header"],
+[class*="stream-chat-header"] {
+    display: none !important;
+}
+
+/* Esconder o input de mensagens */
+.chat-input,
+.chat-wysiwyg-input,
+[class*="chat-input"],
+[class*="chat-wysiwyg-input"],
+textarea[data-a-target="chat-input"] {
+    display: none !important;
+}
+
+/* Esconder botões de bits, pontos de canal, etc */
+.chat-input__buttons-container,
+[class*="chat-input__buttons"] {
+    display: none !important;
+}
+
+/* Fazer o chat-scroller ocupar toda a altura */
+.chat-scrollable-area__message-container,
+.chat-list,
+[class*="chat-scrollable-area"],
+[class*="scrollable-area"] {
+    height: 100vh !important;
+    max-height: 100vh !important;
+}
+
+/* Esconder o container de input inteiro */
+.chat-input__textarea,
+.chat-input-tray,
+[class*="chat-input-tray"] {
+    display: none !important;
+}
+
+/* Garantir que o body e html tenham altura total */
+html, body {
+    height: 100% !important;
+    overflow: hidden !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+/* Container principal do chat */
+.tw-root--theme-dark,
+.tw-root--theme-light,
+[data-a-target="chat-room"] {
+    height: 100% !important;
+}
